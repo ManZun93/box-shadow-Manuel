@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(./assets/images/lineas-en-ondas-abstractas_3840x2400_xtrafondos.com.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  
+}
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 35%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
+
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+}
+
+
+.result {
+  padding: 150px 0;
+}
+
+#element {
+  height: 90px;
+  width: 200px;
+  position: relative;
+  background-color: #6b0e83;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  #element {
+    position: fixed;
+    height: 50px;
+    width: 75px;
+    margin-top: 10%;
+    margin-left: 35%;
+    
+    
+    
+  }
+}
+
+
+
+.sliders {
+  display: grid;
+  grid-template-rows: 6fr 6fr;
+  gap: 20px 15px;
+  
+}
+
+    
+  
+
+
+.slider-wrapper {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .slider-wrapper {
+    
+   justify-content: center;
+   align-items: center;
+  }
+}
+
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance:initial;
+  background-color: #6b0e83;
+  border-radius: 15px;
+  
+}
+
+
+input[type="range"] {
+  width: 100%; 
+}
+
+@media (max-width: 500px) {
+  input[type="range"] {
+    
+    width: 90%; 
+    margin: auto;
+  }
+}
+
+
+input[type="range"]:hover{
+  
+  cursor: pointer;
+  box-shadow: 0px 5px 12px 4px rgba(25, 3, 66, 0.966);
+  
+}
+
+
+.code-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 2fr;
+  gap: 5px;
+  margin-top: 20px;
+}
+textarea {
+  resize: none;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: justify;
+  
+ 
+}
+
+
+
+.code-wrapper button {
+  background-color: #6b0e83;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+}
+
+.code-wrapper button:hover{
+  
+  cursor: pointer;
+  box-shadow: 0px 5px 12px 4px rgba(25, 3, 66, 0.966);
+}
+
+
+#code:hover{
+  cursor:text;
+}
