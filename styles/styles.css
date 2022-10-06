@@ -11,7 +11,11 @@ body {
   
 }
 .container {
-  background-color: #ffffff;
+  background-image: url(../assets/images/30-fondos-de-pantalla-blancos-hd.-fondo-para-computadora-blancos-1-1024x640.png);
+  background-size: cover;
+  background-position: bottom;
+  
+  
   padding: 30px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -42,7 +46,7 @@ body {
 
 #element {
   height: 90px;
-  width: 200px;
+  width: 90px;
   position: relative;
   background-color: #6b0e83;
   margin: auto;
@@ -89,19 +93,27 @@ body {
   }
 }
 
+input[type=range],
+input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+background-color: #6b0e83;
+border-radius: 25px;
+border: none;
 
-input[type='range'],
-input[type='range']::-webkit-slider-runnable-track,
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance:initial;
-  background-color: #6b0e83;
-  border-radius: 15px;
-  
 }
 
+input[type=range]::-webkit-slider-thumb{
+  background-color: rgb(226, 186, 231);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+}
 
 input[type="range"] {
   width: 100%; 
+ 
 }
 
 @media (max-width: 500px) {
@@ -115,7 +127,7 @@ input[type="range"] {
 
 input[type="range"]:hover{
   
-  cursor: pointer;
+ 
   box-shadow: 0px 5px 12px 4px rgba(25, 3, 66, 0.966);
   
 }
