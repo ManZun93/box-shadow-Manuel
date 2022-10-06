@@ -13,7 +13,7 @@ function generateShadow() {
   let hShadow = document.getElementById("h-shadow").value;
   let vShadow = document.getElementById("v-shadow").value;
   let blurRadius = document.getElementById("blur-radius").value;
-  let spreadRadius = document.getElementById("spread-radius").value;
+  let size = document.getElementById("size").value;
   let shadowColor = document.getElementById("shadow-color").value;
   let shadowColorOpacity = document.getElementById(
     "shadow-color-opacity"
@@ -26,7 +26,7 @@ function generateShadow() {
   //Using ternary operator to check if inset checkbox is checked or not.
   //If checked we add the inset prefix
   //Else no inset prefix is added
-  let boxShadow = `${hShadow}px ${vShadow}px ${blurRadius}px ${spreadRadius}px ${hexToRgba(
+  let boxShadow = `${hShadow}px ${vShadow}px ${blurRadius}px ${size}px ${hexToRgba(
         shadowColor,
         shadowColorOpacity
       )}`;

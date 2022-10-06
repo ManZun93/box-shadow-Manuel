@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe&family=Arvo:wght@400;700&family=Comfortaa:wght@400;600&family=Inter:wght@400;600&family=Jacques+Francois+Shadow&family=Reem+Kufi+Fun:wght@400;700&family=Revalia&family=Roboto+Condensed:wght@300;400&family=Rubik+Marker+Hatch&family=Source+Sans+Pro&family=Vast+Shadow&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -24,7 +24,12 @@
           <label for="shadow-color">Shadow Color:</label>
           <input type="color" id="shadow-color" />
         </div>
-
+        
+        <div class="slider-wrapper">
+          <label for="size">Size:</label>
+          <input type="range" id="size" max="50" min="-50" value="0" />
+        </div>
+        
         <div class="slider-wrapper">
           <label for="h-shadow">Horizontal Shadow:</label>
           <input type="range" id="h-shadow" max="100" min="-100" value="0" />
@@ -37,10 +42,7 @@
           <label for="blur-radius">Blur Radius:</label>
           <input type="range" id="blur-radius" max="100" min="0" value="0" />
         </div>
-        <div class="slider-wrapper">
-          <label for="spread-radius">Spread Radius:</label>
-          <input type="range" id="spread-radius" max="50" min="-50" value="0" />
-        </div>
+       
         <div class="slider-wrapper">
           <label for="shadow-color-opacity">Shadow Color Opacity:</label>
           <input
