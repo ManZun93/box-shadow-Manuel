@@ -47,5 +47,5 @@ function copyCode() {
   
 }
 
-//Call the generateShadow function on every page load//
+//Call the generateShadow function on every page load
 window.onload = generateShadow();
