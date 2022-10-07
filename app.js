@@ -2,7 +2,7 @@ let elem = document.getElementById("element");
 let code = document.getElementById("code");
 let inputs = document.querySelectorAll(".sliders input");
 
-//inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+//inputs
 
 for(let i = 0; i <inputs.length; i++){
   document.addEventListener("input", generateShadow)
@@ -23,9 +23,7 @@ function generateShadow() {
   
 
 
-  //Using ternary operator to check if inset checkbox is checked or not.
-  //If checked we add the inset prefix
-  //Else no inset prefix is added
+ //properties and code
   let boxShadow = `${hShadow}px ${vShadow}px ${blurRadius}px ${size}px ${hexToRgba(
         shadowColor,
         shadowColorOpacity
@@ -34,7 +32,7 @@ function generateShadow() {
   code.textContent = `CSS CODE: ${boxShadow};`;
 }
 
-//Converting Hex value to rgba
+//Colors
 function hexToRgba(shadowColor, shadowColorOpacity) {
   let r = parseInt(shadowColor.substr(1, 2), 16);
   let g = parseInt(shadowColor.substr(3, 2), 16);
@@ -42,7 +40,7 @@ function hexToRgba(shadowColor, shadowColorOpacity) {
   return `rgba(${r},${g},${b},${shadowColorOpacity})`;
 }
 
-//Copy the generated code to clipboard
+//Copy 
 function copyCode() {
   code.select();
   document.execCommand("copy");
